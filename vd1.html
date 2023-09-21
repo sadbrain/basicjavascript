@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        button{
+            margin-right: 5px;
+        }
+        /* div{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            opacity: 0.2;
+            margin-top: 10px;
+        } */
+
+        .red{
+            background-color: red;
+        }
+        .yellow{
+            background-color: yellow;
+            
+        }
+        .green{
+            background-color: green;
+            
+        }
+        
+        .opacity{
+            opacity: 1;
+        }
+
+        .container{
+            width: 75%;
+            margin: 0 auto;
+            background-color: #a9a9a9;
+            border: 2px solid red;
+            padding: 20px   ;
+        }
+        .container div{
+            width: 100%;
+            padding: 10px;
+        }
+        .container div label{
+            width: 50%;
+            margin-right: 10px;
+        }
+        .container div input{
+            width: 90%;
+            height: 30px;
+        }
+        button{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p id="kd">ket qua la</p>
+    <script src="vd1.js">
+        // var a = "Hello";
+        // var b = "Dhnynit";
+        // var c = a + " " + b;
+        // alert(c);
+        // // document.write(c);
+        // document.getElementById("kq").innerHTML = c;
+
+
+    </script> -->
+    <!-- <script>
+        var a = 10;
+        var b = 25;
+        var c = a + b;
+        document.write(c);
+        skjdfbshvg;
+        var x = 100 + 200;
+        document.write(x);
+    </script> -->
+
+
+    <script>
+        // alert("welcome!");
+        // var a  = prompt("Input price:","0");
+        // alert(a);
+        // var status  = confirm("Do you want to play?");
+        // alert(status);
+    </script>
+    <!-- <script>
+        function chuvi(a, b){
+            return (a + b) * 2;
+        }
+        function dientich(a, b){
+            return (a * b);
+        }
+        var a = parseInt(prompt("Enter number a"));
+        var b = parseInt(prompt("Enter number b"));
+        var chuvi = chuvi(a, b);
+        var dientich = dientich(a, b);
+
+        document.write("dien tich " + a + " va " + b + " la " + dientich);
+        document.write("chu vi " + a + " va " + b + " la " + chuvi);
+    </script> -->
+
+
+
+
+    <!-- <p>Click the button to demonstrate the prompt box. </p>
+    <button onclick="myFunction()">try it</button>
+    <p class="dome"></p>
+    <script type="text/javascript">
+        function myFunction(){
+            var person = prompt("please enter your name", "Ca voi sat thu");
+            if(person != null){
+                document.getElementsByClassName("dome").innerText  = "my name is " + person;
+            }
+        }
+        
+    </script> -->
+
+    <!-- <button onclick="dt_hcn()">dt hcn</button>
+    <button onclick="dt_hv()">dt hv</button>
+    <button onclick="hello()">hello</button>
+    <p id="hcn"></p>
+    <p id="hv"></p>
+    <p id="hello"></p>
+    <script>
+        function dt_hcn(){
+            var a = prompt("Nhap chieu dai: ");
+            var b = prompt("Nhap chieu rong: ");
+            var dt = a* b;
+
+            document.getElementById("hcn").innerText = "dien tich hinh chu nhat la " + dt;
+        }
+        function dt_hv(){
+            var a = prompt("Nhap canh: ");
+            var dt = a* a;
+
+            document.getElementById("hcn").innerText = "dien tich hinh chu nhat la " + dt;
+        }
+        function hello(){
+            var a = prompt("Your name is: ");
+
+            document.getElementById("hcn").innerText = "hello " + a;
+        }
+
+        
+    </script>
+ -->
+
+
+   <!-- <input type="number" id="b" name ="b">
+    <button onclick="myFunction()">try it</button>
+    <p id="demo"></p>
+    <script>q
+g
+        function myFunction() {
+        var num = document.getAnimations("input[name='b']").value;
+        var result;
+
+            if(num >0){
+
+
+                result = num + " la so duong";
+            }else if(num <0){
+                result = num + " la so am";
+            
+            }else{
+                result = num + " khong la so duong cung khong la so am";
+            }
+
+            document.getElementById("demo").innerText = result;
+        }
+    </script> -->
+    <button onclick="myFunction()" class="red">red</button>
+    <button onclick="myFunction()" class="green">green</button>
+    <button onclick="myFunction()" class="yellow">yellow</button>
+    <div class="red"></div></body>
+    <div class="yellow"></div>
+    <div class="green opacity"></div>
+    <script>
+        function myFunction(){
+            // var listbtn = document.querySelectorAll("button");
+            // var listcamp = document.querySelectorAll("div");
+            var element = document.querySelector("div.opacity");
+            // element.classList.removeClass("opacity");
+            element.style.opacity = 0.5;
+
+
+
+            // listbtn.forEach(function(e){
+            //     e.onclick = function(){
+            //         var color = e.getAttribute("class");
+            //         listcamp.forEach(function(item){
+            //             if(color == item.getAttribute("class")){
+            //                 item.classList.add("opacity");
+            //             }
+            //         })
+
+            //     }
+            // });
+        }    
+
+
+    </script>
+<!-- 
+    <h2>javascript Switch</h2>
+
+
+    <p id="demo"></p>
+    <script>
+        var text;
+        var day = new Date().getDay();
+        switch(day){
+            
+            case 1:
+                text = "Today is Monday";
+                break;
+            case 2:
+                text = "Today is Tuesday";
+                break;
+            case 3:
+                text = "Today is Wednesday";
+                break;
+            case 4:
+                text = "Today is Thursday";
+                break;
+            case 5:
+                text = "Today is Friday";
+                break;
+            case 6:
+                text = "Today is Saturday";
+                break;
+            case 7:
+                text = "Today is Sunday";
+                break;
+        }
+        document.getElementById("demo").innerText = text;
+    </script> -->
+
+
+
+    <!-- <input type="number" id="so">
+    <p id = "demo">kq la</p>
+    <button onclick="myFunction()">ok</button>
+    <script>
+        function myFunction(){
+            var input = document.getElementById("so");
+            var out = (input.value %2 == 0) ? "so chan" : "so le";
+            document.getElementById("demo").innerHTML = out;
+        }
+    </script> -->
+
+
+    <div class="container">
+        <h1>Bang diem cua em</h1>
+        <div>
+            <label>semmester 1</label>
+            <input type="number" id="s1">
+        </div>
+        <div>
+            <label>semmester 2</label>
+            <input type="number" id="s2">
+        </div>
+        <div>
+            <label>year</label>
+            <input type="number">
+        </div>
+        <div>
+            <label>Summarise</label>
+            <input type="text" id="dtb">
+        </div>
+    
+        <p id="demo"></p>
+    
+        <button onclick="myFunction()">Ok</button>
+        <button>cancel</button>
+    </div>
+    <Script>
+        function myFunction() {
+            var s1 = parseFloat(document.getElementById("s1").value);
+            var s2 = parseFloat(document.getElementById("s2").value);
+            
+            var dtb = (s1 + s2) / 2;
+
+            document.getElementById("dtb").value = dtb ;
+            var danhGiaHocSinh;
+            if(dtb >= 8){
+                danhGiaHocSinh = "hoc sinh gioi";
+            }else if(dtb >= 6.5){
+                danhGiaHocSinh = "hoc sinh kha";
+
+            }else if(dtb >= 5){
+                danhGiaHocSinh = "hoc sinh yeu";
+
+            }else{
+                danhGiaHocSinh = "hoc sinh yeu";
+            }
+            document.getElementById("demo").innerHTML = danhGiaHocSinh;
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.fontSize = "20px";
+
+        }
+    </Script>
+</body>
+</html>
